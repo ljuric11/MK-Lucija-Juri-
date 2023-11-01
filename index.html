@@ -5,72 +5,146 @@
     <title>MK - Lucija Jurić</title>
 	
 	<style>	 
-		
-         body{
-	      background-image: url("empirestate.jpg");
-	      background-repeat: no-repeat;
-              background-attachment: fixed;
-	      background-size: 1920px;
-	      background-position: center;
-	      }
-       #tekst{
-	      background:#7f7f7f;
-              background:rgba(0,0,0,0.6);
-	      margin: auto;
-              width: 650px;
-	      height: 900px;
-              padding: 10px;
-	      }
-	   h1{
-	      color: white;
-	      font-family: Arial Black;
-	      font-size: 72px;
-	      line-height: 80px;
-              width: 600px;
-	      padding: 20px;
-	      text-align: center;
+           #traka{
+	      background-color:white;
+	      font-family: Arial, Helvetica, sans-serif;
+	      font-size: 16px;
+	      line-height: 18px;
+              height:50px;
 	      font-weight: 900;
-	      }
-	    p{
+	         }
+          .dropbtn {
+              background-color: #FFFFFF;
+              color: #5C5D5F;
+              padding: 16px;
+              font-size: 16px;
+              border: none;
+                }
+          .dropdown{
+              position: relative;
+              display: inline-block;
+                }
+          .dropdown-content{
+             display: none;
+             position: absolute;
+             background-color: #FFFFFF;
+             min-width: 160px;
+             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+             z-index: 1;
+                }
+          .dropdown-content .navi{
+             color: black;
+             padding: 12px 16px;
+             text-decoration: none;
+             display: block;
+                }
+         .dropdown-content .navi:hover{
+	     background-color: #C7C7C7;
+	        }
+         .dropdown:hover .dropdown-content {display: block;}
+         .dropdown:hover .dropbtn {background-color: #C7C7C7;}
+	 .sign:link, .sign:visited {
+             background-color: #C7C7C7;
+             color: white;
+             padding: 14px 25px;
+             text-align: center;
+             text-decoration: none;
+             display: inline-block;
+	       }
+	 .sign:hover, .sign:active {
+	     background-color: #FFAA66;
+	       }
+	 body{
+	     background-image: url("empirestate.jpg");
+	     background-repeat: no-repeat;
+             background-attachment: fixed;
+	     background-size: 1920px;
+	     background-position: center;
+	       }
+	 #tekst{
+	     background:#7f7f7f;
+             background:rgba(0,0,0,0.6);
+	     margin: auto;
+             width: 650px;
+	     height: 900px;
+             padding: 10px;
+	       }
+	   h1{
 	     color: white;
+	     font-family: Arial Black;
+	     font-size: 72px;
+	     line-height: 80px;
+             width: 600px;
+	     padding: 20px;
+	     text-align: center;
+	     font-weight: 900;
+	       }
+	   p{
+	      color: white;
 	      font-family: Arial, Helvetica, sans-serif;
 	      font-size: 16px;
 	      line-height: 18px;
 	      width: 600px;
 	      padding: 20px;
-	      }	
-       #drugi{
+	       }	
+         #drugi{
 	      font-style: italic;
-	      }
-       #treci{
-	      font-weight: bold;
-	      }
-	   h2{
-	      color:DarkSlateGrey;
-	      font-family: Arial Black;
-	      line-height: 25px;}
-      #lista1{
-	      border-right-style: dotted;
-	      }
-       .liste{
-	      background-color:white;
-	      margin:auto;
-              width:242px;
-	      height:200px;
-              float:left;
-              padding-left:40px;
-              padding-right:40px; 
-	      font-family: Arial, Helvetica, sans-serif;
-	      font-size: 16px;
-	      line-height: 18px;  
 	       }
-		
+	   #treci{
+	      font-weight: bold;
+	       }
+	   h2{
+	     color:DarkSlateGrey;
+	     font-family: Arial Black;
+	     line-height: 25px;
+		 }
+	   #lista1{border-right-style: dotted;
+		 }
+	   #lista2{
+		 }
+	   .liste{
+	     background-color:white;
+	     margin:auto;
+             width:242px;
+	     height:200px;
+             float:left;
+             padding-left:40px;
+             padding-right:40px; 
+	     font-family: Arial, Helvetica, sans-serif;
+	     font-size: 16px;
+	     line-height: 18px;
+		 }
 	</style>
 	
 </head>
 
 <body>
+     <div id="traka">
+         <nav>
+		 
+	      <div class="dropdown">
+	         <button class="dropbtn" ="#">History</button> 			 
+		   <div class="dropdown-content">
+                      <a href class="navi" ="#">Link 1</a>
+                      <a href class="navi" ="#">Link 2</a>
+                      <a href class="navi" ="#">Link 3</a>
+                   </div>
+	      </div>	   
+	      <div class="dropdown">
+	         <button class="dropbtn" ="#">Architecture</button> 			 
+		   <div class="dropdown-content">
+                      <a href class="navi" ="#">Link 1</a>
+                      <a href class="navi" ="#">Link 2</a>
+                      <a href class="navi" ="#">Link 3</a>
+                 </div>
+	      </div>	 
+         
+	      <a href class="sign" ="signin.html">Sign in</a>
 
+         </nav>
+    </div>
+	
+	<br>
     <div id="tekst">
 	   <h1>EMPIRE STATE BUILDING</h1>
 	
